@@ -15,13 +15,15 @@
         </style>
         
         <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="js/jquery.loading.js"></script>
+        <script type="text/javascript" src="js/jquery.loader.js"></script>
         
         <script>
         
         $(function(){
            
-           $('#test').loading();
+           $('#click').loader({
+               container: '#test'
+           });
             
         });
         
@@ -36,6 +38,10 @@
             test
         
         </div>
+        
+        <a href="#" id="click">Click</a>
+        
+        
     
     </body>
 </html>
